@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./js/arrayQuestions.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="hello">
+        <button class="hello__button">Пройти тест</button>
+      </section>
+
+      <section class="questions close">
+        <div class="questions__box">
+          <div class="questions__header">
+          </div>
+
+          <div class="questions__separator"></div>
+
+          <div class="questions__body">
+            <ul class="questions__questions">
+            </ul>
+            <div class="questions__body-footer">
+              <button class="questions__button">Далее</button>
+            </div>
+        </div>
+      </section>
+
+      <section class="result close">
+        <div class="result__box">
+          <h4 class="result__title">Результат теста</h4>
+
+          <div class="result__separator"></div>
+
+          <div class="result__numbers">
+            <!-- <span class="result__numbers-current">5</span> -->
+            <span class="result__numbers-text">из</span>
+            <span class="result__numbers-all">5</span>
+          </div>
+
+          <div class="result__footer">
+            <button class="result__button">Пройти снова</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
