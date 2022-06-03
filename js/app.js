@@ -1,14 +1,10 @@
 const wrapper = document.querySelector(".wrapper")
-// windows
 const helloWindow = document.querySelector(".hello")
 const questionsWindow = document.querySelector(".questions")
 const resultWindow = document.querySelector(".result")
-// buttons
 const helloButton = document.querySelector(".hello__button")
 const nextButton = document.querySelector(".questions__button")
 const resultButton = document.querySelector(".result__button")
-
-// dinamic
 const list = document.querySelector(".questions__questions")
 const numbersBox = document.querySelector(".questions__header-numbers")
 const header = document.querySelector(".questions__header")
@@ -86,8 +82,4 @@ function showResult() {
   resultWindow.classList.remove("close")
   let scoreUserTag = `<p class="result__numbers-current">${userScore} из <span class="result__numbers-all">${arrayQuestions.length}</span></p>`
   resultNumbersBlock.innerHTML = scoreUserTag
-  // resultButton.addEventListener("click", () => {
-  //   helloWindow.classList.remove("close")
-  //   resultWindow.classList.add("close")
-  // })
 }
